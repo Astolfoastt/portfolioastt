@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+        margin-top: 40px;
+        h1 {
+        
+            font-size: 2rem;
+            font-family: var(--font-family-secondary);
+            color: var(--color-third);
+        }
+    }
+}
+
+
+@media (min-width: 780px) {
+
+    .container {
+        flex-grow: 1; /* Permite que o conteúdo principal preencha todo o espaço restante após o cabeçalho */
+        padding-left: 40vh;
+        
+    .title {
+        margin-right: 60px;
+    }
+    }
+} 
+

@@ -1,0 +1,140 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+
+  hr {
+    display: none;
+  }
+}
+
+.contentProject {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin-top: 10px;
+
+  h1 {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  h2 {
+    color: var(--color-third);
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: justify;
+  }
+}
+
+.containerSecondy{
+  width: 68%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+
+    h3 {
+      display: none;
+    }
+    .containerTechs {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+
+      img {
+        width: 30px;
+      }
+    }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+
+  .containerLinks {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    img {
+      width: 20px;
+    }
+    a {
+      text-decoration: none;
+      color: var(--color-third);
+      font-size: 13px;
+    }
+  }
+}
+
+@media (min-width: 780px) {
+  .container {
+    padding: 1%;
+    width: 60%;
+    margin-left: 40px;
+  }
+
+  .contentProject {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    gap: 12px;
+    height: 158px;
+  }
+  .description {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .containerLinks {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 920px) {
+  .container {
+    padding: 1%;
+    width: 70%;
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1080px) {
+  .container {
+    padding: 1%;
+    width: 80%;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    padding: 1%;
+    width: 85%;
+    margin-left: 40px;
+  }
+}

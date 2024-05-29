@@ -1,0 +1,15 @@
+:root {
+  --font-family-primary: "Inter", sans-serif;
+  --font-family-secondary: "Jockey One", sans-serif;
+  --color-primary: #7c7a7a;
+  --color-secondary: #17142b;
+  --color-third: #00C2FF;
+  --color-background-primary: #0f0d20;
+}
+
+body {
+  background-color: var(--color-background-primary);
+  color: var(--color-primary);
+  font-family: var(--font-family-primary);
+  box-sizing: border-box;
+}
