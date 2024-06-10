@@ -15,13 +15,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 
 .description {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  gap: 10px;
   margin-top: 10px;
 
   h1 {
@@ -42,31 +43,28 @@
   }
 }
 
-.containerSecondy{
-  width: 68%;
+.containerSecondy {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   margin-top: 10px;
+  width: 100%;
 
-    h3 {
-      display: none;
-    }
-    .containerTechs {
-      display: flex;
-      width: 100%;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
+  .containerTechs {
+    display: flex;
+    width: 100;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
-      img {
-        width: 30px;
-      }
+    img {
+      width: 30px;
     }
+  }
 }
 
 .links {
   display: flex;
-  align-items: center;
   gap: 15px;
   margin-top: 20px;
 
@@ -74,9 +72,11 @@
     display: flex;
     align-items: center;
     gap: 3px;
+
     img {
       width: 20px;
     }
+
     a {
       text-decoration: none;
       color: var(--color-third);
@@ -85,52 +85,72 @@
   }
 }
 
+//ajuste nos links de projetos para mobile e desktop min-1090px
+@media (max-width: 1090px) {
+  .links {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+//ajuste no container para desktop
 @media (min-width: 780px) {
   .container {
+    margin-right: 55px;
+  }
+}
+
+//desktop-version
+@media (min-width: 1090px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
     padding: 1%;
-    width: 60%;
+    width: 80%;
     margin-left: 40px;
   }
 
   .contentProject {
     display: flex;
     flex-direction: row;
-    align-items: initial;
-    gap: 12px;
-    height: 158px;
+    align-items: flex-start;
+    gap: 20px;
+    height: auto;
   }
+
   .description {
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
   }
 
   .links {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    align-items: flex-end;
     width: 100%;
 
     .containerLinks {
       display: flex;
     }
   }
-}
 
-@media (min-width: 920px) {
-  .container {
-    padding: 1%;
-    width: 70%;
-    margin-left: 50px;
+  .containerSecondy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+
+    .containerTechs {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+    }
   }
 }
-
-@media (min-width: 1080px) {
-  .container {
-    padding: 1%;
-    width: 80%;
-    margin-left: 40px;
-  }
-}
-
+//ajuste na resposividade container projetos desktop min-1400px
 @media (min-width: 1400px) {
   .container {
     padding: 1%;

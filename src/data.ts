@@ -45,10 +45,7 @@ export const projectsData: Project[] = [
     name: "Contact Hub",
     description:
       "Este é um projeto Full-Stack inovador, projetado para o gerenciamento eficiente de contatos. Ele oferece funcionalidades abrangentes,\n" +
-      "incluindo login com autenticação segura, criação de contatos e gerenciamento detalhado desses contatos. O sistema é robusto e incorpora\n" +
-      "todas as validações necessárias para garantir a integridade e segurança das informações dos usuários. No coração deste projeto está a\n" +
-      "capacidade de realizar login com autenticação segura, assegurando que apenas usuários autorizados tenham acesso às funcionalidades. Uma\n" +
-      "vez autenticados, os usuários podem criar novos contatos, armazenando informações detalhadas e relevantes de maneira organizada.",
+      "incluindo login com autenticação segura, criação de contatos e gerenciamento detalhado desses contatos. O sistema é robusto e incorpora\n",
     category: "Full-Stack",
     aplication: "https://contacthub-f.vercel.app",
     repository:
@@ -61,10 +58,7 @@ export const projectsData: Project[] = [
     name: "Movies",
     description:
       "Este é um projeto Full-Stack inovador, projetado para o gerenciamento eficiente de contatos. Ele oferece funcionalidades abrangentes,\n" +
-      "incluindo login com autenticação segura, criação de contatos e gerenciamento detalhado desses contatos. O sistema é robusto e incorpora\n" +
-      "todas as validações necessárias para garantir a integridade e segurança das informações dos usuários. No coração deste projeto está a\n" +
-      "capacidade de realizar login com autenticação segura, assegurando que apenas usuários autorizados tenham acesso às funcionalidades. Uma\n" +
-      "vez autenticados, os usuários podem criar novos contatos, armazenando informações detalhadas e relevantes de maneira organizada.",
+      "incluindo login com autenticação segura, criação de contatos e gerenciamento detalhado desses contatos. O sistema é robusto e incorpora\n",
     category: "Bak-End",
     aplication: "https://contacthub-f.vercel.app",
     repository:
