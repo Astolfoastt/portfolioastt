@@ -1,5 +1,5 @@
-// import { formationsData } from "../../data";
-// import { FormationsCard } from "./cardComponent";
+import { formationsData } from "../../data";
+import { FormationsCard } from "./cardComponent";
 import style from "./style.module.scss";
 
 export const FormationsComponent = () => {
@@ -8,7 +8,7 @@ export const FormationsComponent = () => {
       <div className={style.title}>
         <h1>Formações</h1>
       </div>
-      {/* <div>
+      <div>
         {formationsData.map((formation) => (
           <div key={formation.id}>
             <FormationsCard
@@ -18,8 +18,8 @@ export const FormationsComponent = () => {
               description={formation.description}
             />
           </div>
-        ))} */}
-      {/* </div> */}
+        ))}
+      </div>
     </main>
   );
 };

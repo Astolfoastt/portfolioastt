@@ -1,7 +1,7 @@
 .container {
   display: grid;
-  grid-template-rows: 1fr auto 1fr; /* Dividindo o espaço em três partes iguais */
-  gap: 65px; /* Adicionando espaço entre as seções */
+  grid-template-rows: 1fr auto 1fr; 
+  gap: 65px; 
 
   .presentation {
     padding: 4%;
@@ -35,6 +35,6 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    align-self: center; /* Centralizando verticalmente */
+    align-self: center;
   }
 }

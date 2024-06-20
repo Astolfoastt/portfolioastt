@@ -2,9 +2,6 @@
   display: flex;
   flex-direction: column;
   padding: 5%;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
 
   hr {
     display: none;
@@ -65,6 +62,8 @@
 
 .links {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 15px;
   margin-top: 20px;
 
@@ -81,33 +80,43 @@
       text-decoration: none;
       color: var(--color-third);
       font-size: 13px;
+      cursor: pointer;
+    }
+    a:hover {
+      color: var(--color-primary);
     }
   }
 }
 
-//ajuste nos links de projetos para mobile e desktop min-1090px
-@media (max-width: 1090px) {
-  .links {
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-//ajuste no container para desktop
-@media (min-width: 780px) {
+@media (min-width: 920px) {
   .container {
-    margin-right: 55px;
-  }
-}
-
-//desktop-version
-@media (min-width: 1090px) {
-  .container {
+    padding: 1%;
+    width: 100%;
+    margin-left: 20px;
+    height: 100%;
+    max-width: 85%;
     display: flex;
     flex-wrap: wrap;
-    padding: 1%;
-    width: 80%;
-    margin-left: 40px;
+  }
+
+  .links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    width: 100%;
+
+    .containerLinks {
+      display: flex;
+
+      img {
+        width: 20px;
+      }
+
+      a {
+        font-size: 0.7rem;
+      }
+    }
   }
 
   .contentProject {
@@ -116,45 +125,100 @@
     align-items: flex-start;
     gap: 20px;
     height: auto;
-  }
 
-  .description {
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  .links {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    width: 100%;
-
-    .containerLinks {
-      display: flex;
+    img {
+      width: 130px;
     }
-  }
 
-  .containerSecondy {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
-    width: 100%;
+    .description {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+
+      h1 {
+        font-size: 0.8rem;
+      }
+
+      h2 {
+        font-size: 0.7rem;
+      }
+
+      p {
+        font-size: 0.7rem;
+        text-align: start;
+      }
+    }
 
     .containerTechs {
       display: flex;
       justify-content: flex-start;
       align-items: center;
       flex-direction: row;
+
+      img {
+        width: 25px;
+      }
+    }
+
+    .containerSecondy {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 0;
     }
   }
 }
-//ajuste na resposividade container projetos desktop min-1400px
+
 @media (min-width: 1400px) {
   .container {
     padding: 1%;
-    width: 85%;
-    margin-left: 40px;
+    width: 86%;
+
+    .contentProject {
+      img {
+        width: 160px;
+      }
+    }
+
+    .description {
+      h1 {
+        font-size: 1rem;
+      }
+
+      h2 {
+        font-size: 0.9rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+        text-align: start;
+      }
+    }
+
+    .containerTechs {
+      img {
+        width: 30px;
+      }
+    }
+
+    .links {
+      margin-top: 0;
+      .containerLinks {
+        img {
+          width: 25px;
+        }
+
+        a {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .containerSecondy {
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+    }
   }
 }

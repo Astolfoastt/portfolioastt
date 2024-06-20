@@ -10,16 +10,20 @@ const AppContent: React.FC = () => {
     <div>
       <div
         id="projects"
-        style={{ display: location.pathname === "/projects" ? "visible" : "hidden" }}
+        style={{
+          display: location.pathname === "/projects" ? "visible" : "hidden",
+        }}
       >
         <ProjectPage />
       </div>
       <div
         id="formations"
-        style={{ display: location.pathname === "/formations" ? "visible" : "hidden" }}
+        style={{
+          display: location.pathname === "/formations" ? "visible" : "hidden",
+        }}
       >
         <FormationsPage />
-      </div>  
+      </div>
     </div>
   );
 };

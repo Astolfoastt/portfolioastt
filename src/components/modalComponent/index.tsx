@@ -12,10 +12,9 @@ interface ModalProps {
 export const Modal = ({ children, blockClosing }: ModalProps) => {
   const ref = useRef<HTMLDivElement>(null);
 
-
   return createPortal(
     <main className={style.container}>
-      <div ref={blockClosing? null : ref}>{children}</div>
+      <div ref={blockClosing ? null : ref}>{children}</div>
     </main>,
     document.body
   );

@@ -22,7 +22,6 @@ export const ProjectsCard = ({
           <h1>{name}</h1>
           <h2>{category}</h2>
           <p>{description}</p>
-          {/* <h3>Tecnologias usadas:</h3> */}
           <div className={style.containerSecondy}>
             <div className={style.containerTechs}>
               {skills.map((tech, index) => (
@@ -39,14 +38,13 @@ export const ProjectsCard = ({
               <div className={style.containerLinks}>
                 <img src={repositoryIcon} alt="Ícone do Repositório" />
                 <a href={repository} target="_blank" rel="noopener noreferrer">
-                  Repositório do projeto
+                  Repositório
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <hr />
     </div>
   );
 };

@@ -4,12 +4,11 @@ import style from "./style.module.scss";
 
 export const ProjectsComponent = () => {
   return (
-    <main  className={style.container}>
+    <main className={style.container}>
       <div className={style.title}>
         <h1>Projetos</h1>
       </div>
       <div>
-     
         {projectsData.map((project) => (
           <div key={project.id}>
             <ProjectsCard
@@ -24,7 +23,6 @@ export const ProjectsComponent = () => {
             />
           </div>
         ))}
-  
       </div>
     </main>
   );

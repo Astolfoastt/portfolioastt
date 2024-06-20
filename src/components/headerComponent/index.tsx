@@ -1,4 +1,4 @@
-import profileImg from "./../../assets/header/profile.svg";
+import profileImg from "./../../assets/header/profile.png";
 import style from "./style.module.scss";
 import email from "./../../assets/socialIcons/email.svg";
 import github from "./../../assets/socialIcons/github.svg";
@@ -16,14 +16,6 @@ export const HeaderComponent = () => {
       <div className={style.title}>
         <h1>Astolfo Daniel</h1>
         <h2>Desenvolvedor web</h2>
-      </div>
-
-      <div className={style.presentation}>
-        <p>
-          Sou desenvolvedor web, procuro sempre desenvolver projetos de forma
-          clara e tecnológica. Atualmente sou estudante de Analise e
-          Densenvolvimento de Sistemas na Estácio.
-        </p>
       </div>
       <nav>
         <ul className={style.containerUl}>

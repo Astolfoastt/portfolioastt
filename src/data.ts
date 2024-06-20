@@ -1,12 +1,12 @@
 import iconProject from "./assets/Rectangle 16.svg";
 // import cssIcon from "./assets/skills/cssIcon.svg"
 // import htmlIcon from "./assets/skills/htmlIcon.svg"
-import javaScriptIcon from "./assets/skills/javaScriptIcon.svg"
+import javaScriptIcon from "./assets/skills/javaScriptIcon.svg";
 // import nodeJsIcon from "./assets/skills/nodeJsIcon.svg"
-import postgreIcon from "./assets/skills/postgreIcon.svg"
-import sassIcon from "./assets/skills/sassIcon.svg"
-import typeScriptIcon from "./assets/skills/typeScriptIcon.svg"
-import reactIcon from "./assets/skills/reactIcon.svg"
+import postgreIcon from "./assets/skills/postgreIcon.svg";
+import sassIcon from "./assets/skills/sassIcon.svg";
+import typeScriptIcon from "./assets/skills/typeScriptIcon.svg";
+import reactIcon from "./assets/skills/reactIcon.svg";
 
 export interface Project {
   id: number;
@@ -16,7 +16,7 @@ export interface Project {
   aplication: string;
   repository: string;
   image: string;
-  skills: string[]
+  skills: string[];
 }
 
 export interface Formations {
@@ -38,7 +38,7 @@ export const projectsData: Project[] = [
     repository:
       "https://github.com/Kenzie-Academy-Brasil-Developers/react-entrega-kenzie-hub-Astolfoastt",
     image: iconProject,
-    skills: [javaScriptIcon, sassIcon]
+    skills: [javaScriptIcon, sassIcon],
   },
   {
     id: 2,
@@ -51,7 +51,7 @@ export const projectsData: Project[] = [
     repository:
       "https://github.com/Astolfoastt/m5-projeto-final-kanvas-Astolfoastt",
     image: iconProject,
-    skills: [typeScriptIcon, reactIcon, sassIcon]
+    skills: [typeScriptIcon, reactIcon, sassIcon],
   },
   {
     id: 3,
@@ -64,7 +64,20 @@ export const projectsData: Project[] = [
     repository:
       "https://github.com/Kenzie-Academy-Brasil-Developers/m4-movies-typeorm_Astolfoastt",
     image: iconProject,
-    skills: [typeScriptIcon, postgreIcon]
+    skills: [typeScriptIcon, postgreIcon],
+  },
+  {
+    id: 4,
+    name: "Movies",
+    description:
+      "Este é um projeto Full-Stack inovador, projetado para o gerenciamento eficiente de contatos. Ele oferece funcionalidades abrangentes,\n" +
+      "incluindo login com autenticação segura, criação de contatos e gerenciamento detalhado desses contatos. O sistema é robusto e incorpora\n",
+    category: "Bak-End",
+    aplication: "https://contacthub-f.vercel.app",
+    repository:
+      "https://github.com/Kenzie-Academy-Brasil-Developers/m4-movies-typeorm_Astolfoastt",
+    image: iconProject,
+    skills: [typeScriptIcon, postgreIcon],
   },
 ];
 
@@ -89,6 +102,24 @@ export const formationsData: Formations[] = [
   },
   {
     id: 3,
+    name: "Kenzie Hub",
+    course: "Front-End",
+    description:
+      "O curso de Análise e Desenvolvimento de Sistemas é voltado para a formação de profissionais capacitados a atuar no desenvolvimento,\n" +
+      "implementação e manutenção de sistemas de informação,\n" +
+      "atendendo às necessidades das organizações e contribuindo para a inovação tecnológica.",
+  },
+  {
+    id: 4,
+    name: "Kenzie Hub",
+    course: "Front-End",
+    description:
+      "O curso de Análise e Desenvolvimento de Sistemas é voltado para a formação de profissionais capacitados a atuar no desenvolvimento,\n" +
+      "implementação e manutenção de sistemas de informação,\n" +
+      "atendendo às necessidades das organizações e contribuindo para a inovação tecnológica.",
+  },
+  {
+    id: 5,
     name: "Kenzie Hub",
     course: "Front-End",
     description:

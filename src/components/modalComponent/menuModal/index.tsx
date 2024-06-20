@@ -10,9 +10,9 @@ interface ModalProps {
   toggleModal: () => void;
 }
 
-export const ModalMenu = ({ toggleModal}: ModalProps) => {
+export const ModalMenu = ({ toggleModal }: ModalProps) => {
   return (
-    <Modal toggleModal={toggleModal}  size="70%">
+    <Modal toggleModal={toggleModal} size="70%">
       <nav className={style.container}>
         <div className={style.presentation}>
           <p>
